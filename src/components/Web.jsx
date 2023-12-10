@@ -8,17 +8,29 @@ Title: Voxel Web Development
 */
 
 // import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF } from "@react-three/drei";
 /*eslint-disable */
 export default function Web(props) {
-  const { nodes, materials } = useGLTF('/web.gltf')
+  const { nodes, materials } = useGLTF("./web.gltf");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Object_4.geometry} material={materials.palette} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.Object_6.geometry} material={materials['palette.001']} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh geometry={nodes.Object_8.geometry} material={materials['palette.002']} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh
+        geometry={nodes.Object_4.geometry}
+        material={materials.palette}
+        rotation={[Math.PI / 2, 0, 0]}
+      />
+      <mesh
+        geometry={nodes.Object_6.geometry}
+        material={materials["palette.001"]}
+        rotation={[Math.PI / 2, 0, 0]}
+      />
+      <mesh
+        geometry={nodes.Object_8.geometry}
+        material={materials["palette.002"]}
+        rotation={[Math.PI / 2, 0, 0]}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/web.gltf')
+useGLTF.preload("./web.gltf");

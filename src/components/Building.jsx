@@ -13,7 +13,7 @@ const Card = styled.div`
   justify-content: center;
   text-align: center;
   position: absolute;
-  right: 2%;
+  right: 0%;
   font-weight: 550;
   bottom:40%;
   font-size: 18px;

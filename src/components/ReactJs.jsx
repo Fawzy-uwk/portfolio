@@ -17,7 +17,7 @@ const Card = styled.div`
   position: absolute;
   right:10%;
   font-weight: 550;
-  bottom: 5%;
+  bottom: -2%;
   font-size: 18px;
   width: 20%;
   @media only screen and (max-width:768px) {

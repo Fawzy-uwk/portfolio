@@ -11,7 +11,7 @@ Title: React logo
 import { useGLTF } from "@react-three/drei";
 
 export default function React(props) {
-  const { nodes, materials } = useGLTF("/react.gltf");
+  const { nodes, materials } = useGLTF("./react.gltf");
   return (
     <group {...props} dispose={null}>
       <group>
@@ -27,4 +27,4 @@ export default function React(props) {
   );
 }
 
-useGLTF.preload("/react.gltf");
+useGLTF.preload("./react.gltf");
